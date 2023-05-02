@@ -1086,8 +1086,6 @@ select {
     header{
         min-width: 360px;
        overflow: hidden;
-      
-      
     }
     .header-inner, .top-menu{display: none;}
 
@@ -1590,13 +1588,16 @@ select {
     #sns_slid_img{
         height: 200px;
         margin: 0 auto;
-        overflow: hidden;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        scroll-snap-type: x proximity;
         position: relative;
        
     }
     #sns_slid_img ul{
         position: absolute;
         display: flex;
+        scroll-snap-align: start;
     }
     
     #sns_slid_img ul li a img{
@@ -1942,8 +1943,8 @@ select {
           transform: translateX(-50%);
       }
       #page button{
-          width: 10px;
-          height: 10px;
+          width: 8px;
+          height: 8px;
           border-radius: 50%;
           border: none;
           margin: 5px;
@@ -2239,13 +2240,16 @@ select {
     #sns_slid_img{
         height: 200px;
         margin: 0 auto;
-        overflow: hidden;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        scroll-snap-type: x proximity;
         position: relative;
        
     }
     #sns_slid_img ul{
         position: absolute;
         display: flex;
+        scroll-snap-align: start;
     }
     
     #sns_slid_img ul li a img{
