@@ -1837,8 +1837,7 @@ select {
     .m-snb-title img{
         width: 12px;
         height: 12px;
-        padding-right: 15px;
-      
+        margin-right: 20px;
     }
     .m-sub-snb{
         height: 0;
@@ -1951,7 +1950,8 @@ select {
           cursor: pointer;
       }
       #page button.active{
-          background-color: rgb(80, 80, 80);
+          /* background-color: rgb(80, 80, 80); */
+          background-color: red;
       }
 
       #event{
