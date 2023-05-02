@@ -1837,7 +1837,9 @@ select {
     .m-snb-title img{
         width: 12px;
         height: 12px;
-        padding-right: 15px;
+    
+        position: fixed;
+        right: 30%;
       
     }
     .m-sub-snb{
