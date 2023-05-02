@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        #modal{
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(40,40,40,0.5);
+           padding-top: 70px;
+           box-sizing: border-box;
+        }
+        .search-inner{
+            flex-wrap: wrap;
+           margin: 0 auto;
+            width: 1024px;
+            color: #39261f;
+            font-size: 14px;
+            font-weight: bold;
+            background-color: #fff;
+            border-radius:5px;
+            border: 1px solid;
+            position: relative;
+        }
+        .search-title{
+           height: 20px;
+           margin-bottom: 25px;
+           border-bottom: 1px solid #a99362;
+        }
+        .search-title h2{
+            background: url(./images/icon_search_product.png) no-repeat;
+            width: 100px;
+            height: 40px;
+            margin: 20px 0 0 60px;
+            font-size: 24px;
+            padding: 0 20px 0 50px;
+            line-height: 39px;
+            background-color: #fff;
+            font-weight: 200;
+        }
+        .search-top{
+            width: 1024px;
+            display: flex;
+            margin:0 auto 32px;
+            justify-content: space-around;
+        }
+
+        .search-bottom{
+            display: flex;
+            width: 1024px;
+            margin: 0 auto 32px;
+            justify-content: space-around;
+        }
+        .product-name input,
+        .hash input{
+            width: 350px;
+            height: 32px;
+            border: 1px solid #d1cccb;
+            border-radius: 5px;
+        }
+        .product-name span{
+            margin-right: 21px;
+        }
+        .kategorie{
+            width: 500px;
+        }
+        .kategorie select{
+            border: 1px solid #d1cccb;
+            border-radius: 5px;
+            width: 150px;
+            padding: 5px 0;
+        }
+        .hash span{margin-right: 5px;}
+        .checkbox{
+            display: flex;
+            width: 500px;
+        }
+        .check-title{
+           margin-right: 5px;
+        }
+        .check-list {
+            line-height: 24px;
+        }
+        .check-list label{
+            font-weight: normal;
+            margin-right: 5px;
+        }
+        .searchBtn{
+            width: 1024px;
+            margin: 0 auto 24px;
+            display: flex;
+            justify-content: center;
+        }
+        .searchBtn>button{
+        
+            width: 160px;
+            height: 48px;
+            border-radius: 5px;
+            background-color: #7a6e5f;
+            color: #fff;
+            font-weight: bold;
+            border: none;
+        }
+        .search-close{
+            position: absolute;
+            top: -25px;
+            right: -25px;
+        }
+        .search-close a{
+            width: 46px;
+            height: 46px;
+            background: url(./images/icon_modal_close.png) no-repeat #231814 50%;
+            border: 2px solid #fff;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div id="modal">
+        <form action="">
+            <div class="search-inner">
+                <div class="search-title">
+                    <h2>제품검색</h2>
+                </div>
+                <div class="search-top">
+                    <div class="product-name">
+                        <span>제품명</span><input type="search">
+                    </div>
+                    <div class="kategorie">
+                        <span>카테고리</span>
+                        <select name="" id="">
+                        <option>전체</option>
+                        <option>DONUT</option>
+                        <option>SANDWICHES</option>
+                        <option>COFFEE</option>
+                        <option>BEVERAGE</option>
+                        <option>OTHERS</option>
+                        </select>
+                        <select name="" id="">
+                        <option>전체</option>
+                        <option>DONUT OF MONTH</option>
+                        <option>BASIC</option>
+                        <option>BAGELS</option>
+                        <option>ETC</option>
+                        </select>
+                    </div>
+        
+                </div>
+                <div class="search-bottom">
+                    <div class="hash">
+                        <span>해시태그</span> <input type="search">
+                    </div>
+                    <div class="checkbox">
+                        <div class="check-title"><span>알레르기</span></div>
+                        <div class="check-list">
+                            <div>
+                                <label>
+                                    <input type="checkbox">밀
+                                </label>
+                                <label>
+                                    <input type="checkbox">대두
+                                </label>
+                                <label>
+                                    <input type="checkbox">계란
+                                </label>
+                                <label>
+                                    <input type="checkbox">우유
+                                </label>
+                                <label>
+                                    <input type="checkbox">땅콩
+                                </label>
+                                <label>
+                                    <input type="checkbox">돼지고기
+                                </label>
+                            </div>
+                            <div>
+                                <label>
+                                    <input type="checkbox">복숭아
+                                </label>
+                                <label>
+                                    <input type="checkbox">쇠고기
+                                </label>
+                                <label>
+                                    <input type="checkbox">닭고기
+                                </label>
+                                <label>
+                                    <input type="checkbox">호두
+                                </label>
+                                <label>
+                                    <input type="checkbox">새우
+                                </label>
+                                <label>
+                                    <input type="checkbox">오징어
+                                </label>
+                            </div>
+                            <div>
+                                    <label>
+                                        <input type="checkbox">토마토
+                                    </label>
+                                    <label>
+                                        <input type="checkbox">메밀
+                                    </label>
+                                    <label>
+                                        <input type="checkbox">조개류(굴)
+                                    </label>
+                                    <label>
+                                        <input type="checkbox">아황산류
+                                    </label>
+                                    <label>
+                                        <input type="checkbox">이산화황
+                                    </label>
+                            </div>
+                            <label>
+                                <input type="checkbox">없음
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="searchBtn"><button type="submit">검색</button></div>
+                <div class="search-close">
+                    <a href="#"></a>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

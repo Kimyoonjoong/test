@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+          }
+          a{
+            text-decoration: none;
+          }
+          img{
+            width: 100%;
+          }
+      
+        .card-container{
+            width: 100%;
+            margin: 0 auto 90px;
+            overflow: hidden;
+            position: relative;
+            padding-bottom: 60px;
+            height: 500px;
+          }
+          .card-slides{
+           width: 100%;
+           transition: all 0.5s;
+           margin: 0 auto;
+           display: flex;
+           justify-content: center;
+           overflow: hidden;
+          }
+          .card-inner{
+            display: flex;
+            justify-content: start;
+            overflow: hidden;
+            width: 1280px;
+          }
+          .card-slides ul{
+            display: flex;
+            width: 100%;
+            transition: .5s;
+          }
+          .card-slides ul li{
+           width: 303px;
+            background-color: #fff;
+            border:1px solid #ab9b7f;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-right: 20px;
+            text-align: center;
+          }
+          .card-slides ul li:last-child{
+            margin-right: 0;
+          }
+          .card-slides h3{
+            font-size: 20px;
+            font-weight: normal;
+            color: #372317;
+            padding: 1.2em;
+            border-bottom: 1px solid #d1cccb;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+          }
+          .card-slides span{
+            font-size: 11px;
+            padding: 0 20px 10px;
+            color: #75675c;
+          }
+          .card-slides p{
+            padding: 15px;
+            font-size: 13px;
+            color: #75675c;
+          }
+          #card_page{
+            position: absolute;
+            bottom: 10%;
+            left:50%;
+            transform: translateX(-50%);
+          }
+          
+          #card_page button{
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            border: none;
+            margin: 5px;
+            background-color: #949393;
+            cursor: pointer;
+          }
+          #card_page button.active{
+            background-color: rgb(36, 36, 36);
+            width: 10px;
+            height: 10px;
+          }
+
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card-slides">
+              <div class="card-inner">
+                  <ul>
+                      <li>
+                          <a href="#">
+                              <figure>
+                                  <img src="./images/card_01.jpg" alt="T멤버십 콜라보 이벤트">
+                                  <figcaption>
+                                      <h3>DUNKIN X T멤버십 <br>
+                                      <SPan>2022-11-14~2022-11-20</SPan> <br>
+                                  </h3>
+                                  <P>T멤버십 결제바코드 이용 시, <br>
+                                       던킨 40% 할인 또는 적립, 최대 6천원 할인 또는 적립</P>
+                              </figcaption>
+                              </figure>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#">
+                              <figure>
+                                  <img src="./images/card_02.jpg" alt="SKT 우주패스 핫픽 품목 할인 이벤트">
+                                  <figcaption>
+                                      <h3>SKT 우주패스 핫픽 <br>
+                                          <SPan>2022-06-03~</SPan> <br>
+                                      </h3>
+                                      <P>우주 패스핫픽 전품목 20% OFF</P>
+                                  </figcaption>
+                              </figure>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#">
+                              <figure>
+                                  <img src="./images/card_03.jpg" alt="신제품 던킨 잔케이크">
+                                  <figcaption>
+                                      <h3>던킨 잔케이크 <br>
+                                          <SPan>2022-11-18~</SPan> <br>
+                                      </h3>
+                                      <P>던킨 시나몬크림 파티 & 쿠키앤크림 파티 출시</P>
+                                  </figcaption>
+                              </figure>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#">
+                              <figure>
+                                  <img src="./images/card_04.jpg" alt="매주 금요일 페이머스 글레이즈드팩 할인">
+                                  <figcaption>
+                                      <h3>DONUT FRYDAY <br>
+                                          <SPan>2020-05-08~ </SPan> <br>
+                                      </h3>
+                                      <P>매주 금요일 페이머스 글레이즈드팩 <br> 6개입 6,900원, 12개입 12,900원!</P>
+                                  </figcaption>
+                              </figure>
+                          </a>
+                      </li>
+                  </ul>
+                  <ul>
+                      <li>
+                          <a href="#">
+                              <figure>
+                                  <img src="./images/card_05.jpg" alt="킹 사이즈 아이스 아메리카노 출시">
+                                  <figcaption>
+                                      <h3>던킨 킹 사이즈 아이스 아메리카노<br>
+                                          <SPan>2022-07-05 ~</SPan> <br>
+                                      </h3>
+                                      <P>대용량으로 시원하게 즐기는 <br> 킹 사이즈 아이스 아메리카노!</P>
+                                  </figcaption>
+                              </figure>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#">
+                              <figure>
+                                  <img src="./images/card_06.jpg" alt="가필드 콜라보 이벤트">
+                                  <figcaption>
+                                      <h3>DUNKIN X GARFIELD <br>
+                                          <SPan>2022-11-18 ~ 2022-11-24</SPan> <br>
+                                      </h3>
+                                      <P>쿠션 블랭킷 사전예약하면 4,000원 OFF!</P>
+                                  </figcaption>
+                              </figure>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#">
+                              <figure>
+                                  <img src="./images/card_07.jpg" alt="SKT 할인/적립 이벤트">
+                                  <figcaption>
+                                      <h3>DUNKIN X SKT<br>
+                                          <SPan>2022-03-29 ~ 2023-01-31</SPan> <br>
+                                      </h3>
+                                      <P>T멤버십 VIP/GOLD 15%할인 적립, <br> SILVER 5% 할인/적립!</P>
+                                  </figcaption>
+                              </figure>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#">
+                              <figure>
+                                  <img src="./images/card_08.jpg" alt="11월 해피포인트 이벤트">
+                                  <figcaption>
+                                      <h3>11월 H-DAY <br>
+                                          <SPan>2022-11-06 ~ 2022-11-26</SPan> <br>
+                                      </h3>
+                                      <P>11월 H-DAY Play on Happy point</P>
+                                  </figcaption>
+                              </figure>
+                          </a>
+                      </li>
+                  </ul>
+                  <ul>
+                      <li>
+                          <a href="#">
+                              <figure>
+                                  <img src="./images/card_09.jpg" alt="LGU+ VIP 구독 이벤트">
+                                  <figcaption>
+                                      <h3>LGU+ VIP 구독콕 <br>
+                                          <SPan>2022-07-01 ~ 2022-12-31</SPan> <br>
+                                      </h3>
+                                      <P>LGU+ VIP중, 던킨 구독콕 선택 대상에게 카푸치노츄이스티 콤보 이용권 2매 증정</P>
+                                  </figcaption>
+                              </figure>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#">
+                              <figure>
+                                  <img src="./images/card_10.jpg" alt="KT VIP 고객 생일달 도넛+아메리카노 무료 이벤트">
+                                  <figcaption>
+                                      <h3>DUNKIN X KT <br>
+                                          <SPan>2022-04-01 ~ 2022-12-31</SPan> <br>
+                                      </h3>
+                                      <P>KT VIP 고객 생일달 해피버스데이 도넛+아메리카노 FREE!</P>
+                                  </figcaption>
+                              </figure>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#">
+                              <figure>
+                                  <img src="./images/card_11.jpg" alt="11월 KT 멤버십 전품목 40% 할인 이벤트">
+                                  <figcaption>
+                                      <h3>던킨 X KT 멤버십 <br>
+                                          <SPan>2022-11-21 ~ 2022-11-27</SPan> <br>
+                                      </h3>
+                                      <P>11월, KT 멤버십 나의 초이스 던킨 전품목 40% OFF</P>
+                                  </figcaption>
+                              </figure>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#">
+                              <figure>
+                                  <img src="./images/card_12.png" alt="핫 샌드위치 구매시 음료 할인 이벤트">
+                                  <figcaption>
+                                      <h3>핫 샌드위치 구매 시 음료 할인 <br>
+                                          <SPan>2022-07-11 ~ </SPan> <br>
+                                      </h3>
+                                      <P>핫 댄드위치 구매 시, 모든 제조 커피/음료 1,000원 할인!</P>
+                                  </figcaption>
+                              </figure>
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <div id="card_page"></div>
+    </div>
+  
+ 
+     
+  
+
+ <script>
+
+  let cardContainer = document.querySelector('.card-container');
+  let cardInner = document.querySelector('.card-slides');
+  let cardSlides = document.querySelectorAll('.card-slides ul');
+  let cardCount = 0;
+  let cardPager = document.querySelector('#card_page');
+  let cardHtml = '';
+
+  for(let i=0; i<cardSlides.length; i++){
+      cardHtml += '<button></button>';
+      cardPager.innerHTML = cardHtml;
+  }
+ let cardBtn = document.querySelectorAll('#card_page button');
+ cardBtn[0].classList.add('active');
+ 
+ function cardSlid() {
+    if (cardCount == cardSlides.length - 1) {
+      cardCount = 0;
+    } else {
+      cardCount++;
+    }
+    cardSlides.forEach(slide => {
+      slide.style.transform = 'translateX(-' + cardCount * 100 + '%)';
+    });
+    cardBtn.forEach(btn => {
+      btn.classList.remove('active');
+    });
+    cardBtn[cardCount].classList.add('active');
+    console.log(cardCount);
+  }
+
+  function cardAuto(){
+     let cardTimer = setInterval(()=>{
+          cardSlid()
+      },2000)
+      cardContainer.addEventListener('mouseover',()=>{
+          clearInterval(cardTimer);
+      });
+  }
+  cardAuto();
+  cardContainer.addEventListener('mouseout',()=>{
+  cardAuto();
+ })
+
+
+ </script> 
+  <!-- <script>
+    let cardInner=document.querySelector('.card-inner');
+    let cardSlides = document.querySelectorAll('.card-inner ul');
+    let cardCount = 0;
+    let cardPage = document.querySelector('#card_page');
+    let cardHtml = '';
+    for(let i=0; i<cardSlides.length; i++){
+        cardHtml += '<button></button>'
+        cardPage.innerHTML = cardHtml;
+    }
+    let cardBtn = document.querySelectorAll('#card_page button');
+    cardBtn[0].classList.add('active');
+    
+    function cardSlide(){
+        cardCount +=1;
+        cardSlides.forEach((slide)=>{
+            slide.style.translate = cardCount * -100 + '%';
+        })
+        if(cardCount == cardSlides.length-1){
+            cardCount = -1;
+        }
+       /* for(let i=0; i<cardBtn.length; i++){
+            for(let j=0; j<cardBtn.length; j++){
+                cardBtn[j].classList.remove('active')
+            }
+            cardBtn[i].classList.add('active')
+        }*/
+  
+       console.log(cardCount)
+    }
+
+    
+    function AutoSlide(){
+        let cardTimer = setInterval(()=>{
+            cardSlide()
+        },2000)
+    }
+    AutoSlide();
+    
+</script>   -->
+</body>
+</html>

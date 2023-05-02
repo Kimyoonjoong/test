@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'nanum';
+    src: url(../font/NanumSquareRoundOTFB.otf);
+    
+}
+
+html{
+    font-family: 'nanum';
+}
+
+#container{
+height: auto; margin: auto;
+    overflow: hidden;
+}
+
+
+
+section{
+   margin-bottom: 90px;
+}
+
+footer{
+    max-width: 1280px;
+  
+}

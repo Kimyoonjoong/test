@@ -1,0 +1,128 @@
+*{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
+img{
+  width: 100%;
+}
+.slide-container{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.slides{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+.slides img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#prevBtn,
+#nextBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  font-size: 20px;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
+#prevBtn {
+  left: 10px;
+}
+
+#nextBtn {
+  right: 10px;
+}
+
+#page{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    
+}
+#page button{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+}
+#page button.active{
+    background-color: rgb(36, 36, 36);
+}
+.card-container{
+  max-width: 1280px; margin: 0 auto 90px;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 60px;
+  height: 500px;
+}
+.card-slides{
+ width: 100%;
+ transition: all 0.5s;
+ margin-left: 100px;
+}
+.card-slides ul{
+  display: flex;
+  position: absolute;
+}
+.card-slides ul li{
+  width:254px;
+  background-color: #fff;
+  border:1px solid #ab9b7f;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-right: 20px;
+  text-align: center;
+  
+}
+.card-slides h3{
+  font-size: 20px;
+  font-weight: normal;
+  color: #372317;
+  padding: 1.2em;
+  border-bottom: 1px solid #d1cccb;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.card-slides span{
+  font-size: 11px;
+  padding: 0 20px 10px;
+  color: #75675c;
+}
+.card-slides p{
+  padding: 15px;
+  font-size: 13px;
+  color: #75675c;
+}
+#card_page{
+  position: absolute;
+  bottom: 10%;
+  left:50%;
+  transform: translateX(-50%);
+}
+
+#card_page button{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  margin: 5px;
+  background-color: #949393;
+  cursor: pointer;
+}
+#card_page button.active{
+  background-color: rgb(36, 36, 36);
+}
