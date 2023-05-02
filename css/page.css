@@ -1298,8 +1298,8 @@ select {
           transform: translateX(-50%);
       }
       #page button{
-          width: 10px;
-          height: 10px;
+          width: 15px;
+          height: 15px;
           border-radius: 50%;
           border: none;
           margin: 5px;
@@ -1943,8 +1943,8 @@ select {
           transform: translateX(-50%);
       }
       #page button{
-          width: 8px;
-          height: 8px;
+          width: 15px;
+          height: 15px;
           border-radius: 50%;
           border: none;
           margin: 5px;
