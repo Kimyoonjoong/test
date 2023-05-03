@@ -1763,6 +1763,11 @@ select {
       .search-inner span{
         font-size: 12px;
       }
+      .search-top, .search-bottom{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
      .search-top>div, .search-bottom>div{
         padding: 12px;
         margin: 0 auto;
