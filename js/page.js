@@ -45,6 +45,7 @@ let snbOpen = document.querySelector('.m-top-left');
 let snbInner = document.querySelector('.m-nav-inner');
 let mSearch = document.querySelector('.m-search');
 let mBg = document.querySelector('.m-nav-bg');
+
 snb.forEach((x,i)=>{
 	x.firstElementChild.addEventListener('click',()=>{
 		snb.forEach((x,i)=>{
