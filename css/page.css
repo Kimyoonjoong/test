@@ -1081,8 +1081,92 @@ select {
 /* 태블릿 : 윈도우 사이즈 768px ~ 1023px 사이인 경우 적용 */
 @media screen and (min-width:768px) and (max-width: 1023px){
     #search{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(40,40,40,0.5);
+        padding-top: 70px;
+        box-sizing: border-box;
+        position: fixed;
+        z-index: 99;
         display: none;
+      }
+      .search-inner{
+          margin: 0 auto;
+          width: 68%;
+          height: 416px;
+          color: #39261f;
+          font-size: 12px;
+          font-weight: bold;
+          background-color: #fff;
+          border-radius:5px;
+          border: 1px solid  #a99362;
+          position: relative;
+      }
+     .search-title{
+         height: 20px;
+         margin-bottom: 25px;
+         border-bottom: 1px solid #a99362;
+      }
+      
+      .search-title h2{
+          background: url(../images/icon_search_product.png) no-repeat;
+          width: 60px;
+          height: 40px;
+          margin: 20px 0 0 60px;
+          font-size: 16px;
+          padding: 0 20px 0 40px;
+          line-height: 39px;
+          background-color: #fff;
+          font-weight: 200;
+      }
+      .search-inner span{
+        font-size: 16px;
+      }
+      .search-top, .search-bottom{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+      }
+     .search-top>div, .search-bottom>div{
+        padding: 12px;
+        margin: 0 auto;
+        }
+    .product-name input{
+        width: 266px;
+        padding-left: 5px;
     }
+    .hash input{
+        width: 250px;
+    }
+    .check-list>div{
+        font-size: 14px;
+    }
+    .searchBtn{
+        text-align: center;
+       margin-top: 24px;
+    }
+    .searchBtn button{
+        background-color: #7a6e5f;
+        color: #fff;
+        width: 80px;
+        height: 40px;
+        border: none;
+        border-radius: 5px;
+    }
+    .search-close{
+        position: absolute;
+        top: -12px;
+        right: -12px;
+    }
+    .search-close a{
+        width: 36px;
+        height: 36px;
+        background: url(../images/icon_modal_close.png) no-repeat #231814 50%;
+        border: 2px solid #fff;
+        border-radius: 50%;
+    }
+
     header{
         min-width: 360px;
        overflow: hidden;
@@ -1175,13 +1259,14 @@ select {
         z-index: 1;
     }
 
-    .m-snb-title{
+    .m-snb-title, .m-snb-title-div{
         border-bottom: 1px solid #958b7f;
         overflow: hidden;
         display: flex;
         align-items: center;
     }
-    .m-snb-title a{
+  
+    .m-snb-title a, .m-snb-title-div a{
         color: #fff;
         letter-spacing: 0.3px;
         font-size: 16px;
@@ -1189,6 +1274,7 @@ select {
         font-weight: bold;
         box-sizing: border-box;
     }
+    
     .m-snb-title img{
         width: 15px;
         height: 15px;
@@ -1232,6 +1318,7 @@ select {
         padding-bottom: 24px;
     }
 
+    /* ------------------------ m-nav end */
 
 
     .slide-container{
@@ -1908,14 +1995,15 @@ select {
         background: none;
     }
     
-    .m-snb-title{
+    .m-snb-title, .m-snb-title-div{
         border-bottom: 1px solid #958b7f;
         overflow: hidden;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .m-snb-title a{
+   
+    .m-snb-title a, .m-snb-title-div a{
         color: #fff;
         letter-spacing: 0.3px;
         font-size: 14px;
@@ -2058,24 +2146,20 @@ select {
         font-size:0.75em;
     }
     /* event end */
-    
+
     .card-inner{
         display: flex;
-        overflow: hidden;
         margin: 0px auto;
-        overflow-x: scroll;
-       
+        
       }
-      .card-inner::-webkit-scrollbar-thumb{
-        z-index: 99;
-      }
+   
       .card-inner ul{
         display: flex;
         width: 100%;
         transition: 1s;
         flex-shrink: 0;
         gap: 8px;
-        
+        overflow-x: scroll; 
         padding: 0 10px;
       }
       .card-inner ul li{
@@ -2087,7 +2171,6 @@ select {
         box-sizing: border-box;
         text-align: center;
         flex-shrink: 0;
-        
       }
       .card-inner ul li:last-child{
         margin-right: 0;
